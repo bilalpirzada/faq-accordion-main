@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'worksans'; /* Name your font family */
+  src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+body{
+  background-image: url("/assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  background-color: hsl(275, 100%, 97%);
+  display: flex;
+  justify-content: center;
+  font-family: worksans;
+}
+
+.box{
+  background-color: white;
+  position: absolute;
+  min-height: 400px;
+  min-width: 300px;
+  max-width: 500px;
+  top: 100px;
+  border-radius: 15px; 
+}
+
+
+
+@media  (max-width:500px) {
+  body{
+  background-image: url("/assets/images/background-pattern-mobile.svg");
+  }
+  .box{
+    height: auto;
+    width: 300px; 
+  }
+}
+
+@media  (min-width:1440px) {
+  body{
+  background-image: url("/assets/images/background-pattern-desktop.svg");
+  }
+}
+
+
+
+
+
+p{
+  font-size: 16px;  
+}
+
+
+
+.inner-box{ margin: 20px;}
+
+.title{
+  font-weight: 700;
+  font-size: 40px;
+}
+ 
+.question{
+  font-weight: 600;
+}
+
+.question:hover{color: hsl(298, 86%, 47%); cursor: pointer;}
+
+.question-div
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-btn{height: 20px; width: 20px; border: none; border-radius: 10px; background-color: hsl(292, 42%, 14%); font-size: 22px; color: white; display: flex; justify-content: center; align-items: center;}
+
+.question-btn-clicked{
+  background-color: hsl(298, 86%, 47%);
+}
+
+.question-div button:hover{
+  cursor: pointer;
+}
+
+
+hr{border:.1px solid hsl(292, 16%, 49%); opacity: 0.2;}
+
+.answer{color:hsl(292, 16%, 49%);font-size: 14px;}
